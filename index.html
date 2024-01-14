@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RapidQuest</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="css\progress_pie_compiled.css" />
+</head>
+
+<body>
+
+    <body id="body-pd">
+        <a href="#" class="notification"><i class="bx bx-bell nav_icon"></i></a>
+        <div class="l-navbar mx-1" id="navb">
+            <nav class="nav">
+                <div class="nav-sub">
+                    <div class="nav_list" id="nav-first">
+                        <a href="#" class="nav_link"> <img src="butterfly.webp" class='nav-logo1'></img></a>
+                        <a href="#" class="nav_logo"> <i class='bx bx-search nav_icon'></i></a>
+                    </div>
+                    <div class="nav_list">
+                        <a href="#" class="nav_link active"> <i class='bx bx-grid-alt nav_icon'></i> </a>
+                        <a href="#" class="nav_link"> <i class='bx bx-message-square-detail nav_icon'></i></a>
+                        <a href="#" class="nav_link"> <i class='bx bx-folder nav_icon'></i></a>
+                        <a href="#" class="nav_link"> <i class='bx bx-user nav_icon'></i> </a>
+                        <a href="#" class="nav_link" id="nav-sec-l"> <i class='bx bx-search nav_icon'></i></a>
+                    </div>
+                </div>
+                <div class="nav_list" id="nav-second">
+                    <a href="#" class="nav_link"> <i class='bx bx-bell nav_icon'></i></a>
+                    <a href="#" class="nav_link"> <i class='bx bx-log-out nav_icon'></i></a>
+                </div>
+            </nav>
+        </div>
+        <!--Container Main start-->
+        <div class=" main-container ">
+
+            <div class="land-sec-1">
+                <div class="d-flex flex-row justify-content-between">
+                    <div><img src="photo1.jpg" class="rounded-circle float-left profile-img" alt="Profile Picture">
+                    </div>
+                    <div class="mx-3 mt-2">
+                        <h3 class="first-head" id="h3">Hi Anurag</h3>
+                        <h6 class="first-head" id="h5">welcome back.</h6>
+                    </div>
+                </div>
+                <h5 class="head-2 mt-3 mx-1">Today</h5>
+                <div class="div-1">$19,892</div>
+                <div class="text-1 text-secondary">Account Balance</div>
+                <div class="div-2 mt-2">$4000</div>
+                <div class="text-1 text-secondary">Year-to-Date Contributions</div>
+                <div class="div-2 mt-2">$1,892</div>
+                <div class="text-1 text-secondary mb-3">Total Interest</div>
+                <div class="button-1 mt-1 mb-3"><a class="btn-1">I want to</a></div>
+                <h5 class="head-2 mt-3 mx-1 mb-2">Recent Transactions</h5>
+                <div class="text-1 text-secondary">2020-08-07</div>
+                <div class="text-2 mb-1">Withdrawal Transfer to Bank-XX11</div>
+                <hr class="my-1 py-1 h">
+                <div class="text-1 text-secondary">2020-07-21</div>
+                <div class="text-2 mb-1">Withdrawal Transfer to Bank-XX11</div>
+                <hr class="my-1 py-1 h">
+                <div class="text-1 text-secondary">2020-07-16</div>
+                <div class="text-2 mb-1">Withdrawal Transfer to Bank-XX11</div>
+                <hr>
+            </div>
+            <div class="land-sec-2">
+                <h5 class="head-3 mx-1 my-0">Retirement Income</h5>
+                <h4 class="head-2 mx-1 mt-0 mb-4 py-0">Starting Year 2056</h4>
+                <div class="stats mb-4">
+                    <div class="stat" id="stat1">
+                        <div class="div-3">$300,000</div>
+                        <div class="text-3 text-secondary">My Goal</div>
+                        <hr style="color:blue;">
+                    </div>
+                    <div class="stat" id="stat2">
+                        <div class="div-3">59%</div>
+                        <div class="text-3 text-secondary">Goal Achieved</div>
+                        <hr style="color:blue;">
+                    </div>
+                    <div class="stat" id="stat3">
+                        <div class="div-3">$300</div>
+                        <div class="text-3 text-secondary">Est. Monthly Income</div>
+                        <hr style="color:blue;">
+                    </div>
+                </div>
+                <h5 class="head-2 mb-1 mx-1 ">Contributions Overtime</h5>
+                <div class="color-codes">
+                    <div class="color-code">
+                        <div class="marker" style="background-color: blue;"></div>
+                        <div class="scale"><span class="text-secondary">Employer: </span><span class="unit">K
+                                73,500</span></div>
+                    </div>
+                    <div class="color-code">
+                        <div class="marker" style="background-color: rgb(87, 131, 226);"></div>
+                        <div class="scale"><span class="text-secondary">Employer: </span><span class="unit">K
+                                52,500</span></div>
+                    </div>
+                    <div class="color-code">
+                        <div class="marker" style="background-color: rgb(0, 204, 255);"></div>
+                        <div class="scale"><span class="text-secondary">Employer: </span><span class="unit">K
+                                24,313</span></div>
+                    </div>
+                </div>
+                <div class="statistic mt-3 mb-4">
+                    <div class="scaling my-0">
+                        <div class="scale-value py-0 my-0">$300</div>
+                        <div class="scale-value py-0 my-0">$200</div>
+                        <div class="scale-value py-0 my-0">$100</div>
+                        <div class="scale-value py-0 my-0">$0</div>
+                    </div>
+                    <div class="table-width">
+                        <table
+                            class="charts-css column multiple stacked  tab show-heading  show-labels show-primary-axis show-3-secondary-axes  data-spacing-6">
+
+                            <thead>
+                                <tr>
+                                    <td scope="row"> 0 </td>
+                                    <td scope="row"> 25 </td>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <th class="lab"> 20 </th>
+                                    <td style="--size: calc( 6/ 100 );--color:blue;"> </td>
+                                    <td style="--size: calc(  6 / 100 );--color:rgb(87, 131, 226)"> </td>
+                                    <td style="--size: calc( 8 / 100 );--color:rgb(0, 204, 255)"> </td>
+                                </tr>
+                                <tr>
+                                    <td style="--size: calc( 8/ 100 );--color:blue;"> </td>
+                                    <td style="--size: calc(  8 / 100 );--color:rgb(87, 131, 226)"> </td>
+                                    <td style="--size: calc( 9 / 100 );--color:rgb(0, 204, 255)"> </td>
+                                </tr>
+                                <tr>
+                                    <th class="lab"> 25 </th>
+                                    <td style="--size: calc( 10/ 100 );--color:blue;"> </td>
+                                    <td style="--size: calc(  11 / 100 );--color:rgb(87, 131, 226)"> </td>
+                                    <td style="--size: calc( 9 / 100 );--color:rgb(0, 204, 255)"> </td>
+                                </tr>
+                                <tr>
+                                    <td style="--size: calc( 11/ 100 );--color:blue;"> </td>
+                                    <td style="--size: calc(  12 / 100 );--color:rgb(87, 131, 226)"> </td>
+                                    <td style="--size: calc( 12 / 100 );--color:rgb(0, 204, 255)"> </td>
+                                </tr>
+                                <tr>
+                                    <th class="lab"> 30 </th>
+                                    <td style="--size: calc( 13/ 100 );--color:blue;"> </td>
+                                    <td style="--size: calc(  14 / 100 );--color:rgb(87, 131, 226)"> </td>
+                                    <td style="--size: calc( 13 / 100 );--color:rgb(0, 204, 255)"> </td>
+                                </tr>
+                                <tr>
+
+                                    <td style="--size: calc( 15/ 100 );--color:blue;"> </td>
+                                    <td style="--size: calc(  16 / 100 );--color:rgb(87, 131, 226)"> </td>
+                                    <td style="--size: calc( 14 / 100 );--color:rgb(0, 204, 255)"> </td>
+                                </tr>
+                                <tr>
+                                    <th class="lab"> 35 </th>
+                                    <td style="--size: calc( 17/ 100 );--color:blue;"> </td>
+                                    <td style="--size: calc(  17 / 100 );--color:rgb(87, 131, 226)"> </td>
+                                    <td style="--size: calc( 16 / 100 );--color:rgb(0, 204, 255)"> </td>
+                                </tr>
+                                <tr>
+
+                                    <td style="--size: calc( 19/ 100 );--color:blue;"> </td>
+                                    <td style="--size: calc(  18 / 100 );--color:rgb(87, 131, 226)"> </td>
+                                    <td style="--size: calc( 18 / 100 );--color:rgb(0, 204, 255)"> </td>
+                                </tr>
+                                <tr>
+                                    <th class="lab"> 40 </th>
+                                    <td style="--size: calc( 21/ 100 );--color:blue;"> </td>
+                                    <td style="--size: calc(  20 / 100 );--color:rgb(87, 131, 226)"> </td>
+                                    <td style="--size: calc( 19 / 100 );--color:rgb(0, 204, 255)"> </td>
+                                </tr>
+                                <tr>
+                                    <td style="--size: calc( 22/ 100 );--color:blue;"> </td>
+                                    <td style="--size: calc(  22 / 100 );--color:rgb(87, 131, 226)"> </td>
+                                    <td style="--size: calc( 21 / 100 );--color:rgb(0, 204, 255)"> </td>
+                                </tr>
+                                <tr>
+                                    <th class="lab"> 45 </th>
+                                    <td style="--size: calc( 24/ 100 );--color:blue;"> </td>
+                                    <td style="--size: calc(  23 / 100 );--color:rgb(87, 131, 226)"> </td>
+                                    <td style="--size: calc( 23 / 100 );--color:rgb(0, 204, 255)"> </td>
+                                </tr>
+                                <tr>
+
+                                    <td style="--size: calc( 26/ 85 );--color:blue;"> </td>
+                                    <td style="--size: calc(  24 / 85 );--color:rgb(87, 131, 226)"> </td>
+                                    <td style="--size: calc( 25 / 85 );--color:rgb(0, 204, 255)"> </td>
+                                </tr>
+                                <tr>
+                                    <th class="lab"> 50 </th>
+                                    <td style="--size: calc( 27/ 80 );--color:blue;"> </td>
+                                    <td style="--size: calc(  26 / 80 );--color:rgb(87, 131, 226)"> </td>
+                                    <td style="--size: calc( 27 / 80 );--color:rgb(0, 204, 255)"> </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <h5 class="head-2 mx-1 ">How do I compare to my peers?</h5>
+                <div class="text-3 text-secondary mb-3">These numbers represent current goal achievement</div>
+                <div class="last-sec">
+                    <div class="last-sec-sub-1">
+                        <div class="last-sub-sub">
+                            <div class="text-2 "><b>Age :</b>Under 30</div>
+                            <hr class="my-1 py-1">
+                        </div>
+                        <div class="last-sub-sub">
+                            <div class="text-2"><b>Salary :</b>K 20 - K 30</div>
+                            <hr class="my-1 py-1">
+                        </div>
+                        <div class="last-sub-sub">
+                            <div class="text-2 "><b>Gender :</b>Male</div>
+                            <hr class="my-1 py-1">
+                        </div>
+                    </div>
+                    <div class="last-sec-sub-2">
+                        <div class="progress-pie" data-value="78%"></div>
+                        <div class="progress-pie" data-value="95%"></div>
+                        <div class="progress-pie" data-value="59%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="sec-3">
+                <div class="land-sec-3 px-3"  id="sup3">
+                    <h5 class="head-2 mb-4 ">Retirement Strategy</h5>
+                    <div class="text-4 ">Employee Contribution</div>
+                    <div class="d-flex flex-row justify-content-between mb-3">
+                        <div class="border">
+                            <div class="grey" style="width:12%;">
+                                <div class="pointer"></div>
+                            </div>
+                        </div>
+                        <div class="percen"><b>12%</b></div>
+                    </div>
+                    <div class="text-4 ">Retirement Age</div>
+                    <div class="d-flex flex-row justify-content-between">
+                        <div class="border">
+                            <div class="grey" style="width:65%;">
+                                <div class="pointer"></div>
+                            </div>
+                        </div>
+                        <div class="percen"><b>60%</b></div>
+                    </div>
+                    <hr class="my-4">
+                    <div class="d-flex flex-row justify-content-between mb-2">
+                        <div class="text-4 ">Employer Contribution</div>
+                        <div><b>8.4%</b></div>
+                    </div>
+                    <div class="d-flex flex-row justify-content-between mb-4">
+                        <div class="text-4 ">Interest rate</div>
+                        <div><b>5%</b></div>
+                    </div>
+                    <div class="text-center last-btn mb-4" id="but"><a href="#" style="color:white;">Update</a> </div>
+                    <div class="text-center last-link" id="doc"><a href="#">View help docs</a></div>
+                </div>
+                <div class="land-sec-3-sub" id="sup">
+                    <div class="border-2"></div>
+                    <div>
+                        <div class="text-5 text-secondary">Are you considering a</div>
+                        <div class="text-5"><b>Housing Advance?</b></div>
+                        <div class="text-1 text-secondary mb-2">Limited time reduced interest</div>
+                        <div class="text-6">Learn More</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="update-button text-center fixed-bottom py-2" id="update"><a href="#" style="width:100vw;" class="update-btn ">Update</a></div>
+        <!--Container Main end-->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </body>
+
+</html>
